@@ -1,0 +1,19 @@
+[package]
+name = "safe-account"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+## aa-sdk-rs = { git = "https://github.com/bejitono/aa-sdk-rs.git", branch = "main" }
+aa-sdk-rs = { path = "/Users/stefano/dev/account-abstraction/aa-sdk-rs-main" }
+alloy = { version = "0.8.1", features = ["full"] }
+tokio = { version = "1.37", features = ["full", "test-util"] }
+async-trait = "0.1"
+thiserror = "2.0.8"
+serde = "1"
+serde_json = "1"
+url = "2.1"
+alloy-transport-http = "0.8.1"
+alloy-node-bindings = "0.8.1"
+alloy-chains = "0.1.0"
+hex = "0.4.3"
